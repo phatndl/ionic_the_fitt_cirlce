@@ -1,0 +1,19 @@
+@font-face {
+    font-family: AvertaRegular;
+    src: url('assets/fonts/AvertaDemoPE-Regular.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/AvertaDemoPE-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/fonts/AvertaDemoPE-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('assets/fonts/AvertaDemoPE-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('assets/fonts/AvertaDemoPE-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('assets/fonts/AvertaDemoPE-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: AvertaExtraBold;
+    src: url('assets/fonts/AvertaDemoPE-ExtraboldItalic.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/AvertaDemoPE-ExtraboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/fonts/AvertaDemoPE-ExtraboldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('assets/fonts/AvertaDemoPE-ExtraboldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('assets/fonts/AvertaDemoPE-ExtraboldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('assets/fonts/AvertaDemoPE-ExtraboldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

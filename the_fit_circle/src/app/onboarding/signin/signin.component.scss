@@ -1,0 +1,19 @@
+.signin{
+    &__input{
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 200px;
+        z-index: 2;
+    }
+    &__inel{
+        margin-bottom: 10px;
+        --border-radius: 5px;
+        --color: rgb(239, 82, 132);
+    }
+    &__align{
+        display: flex;
+        align-items: center;
+    }
+}

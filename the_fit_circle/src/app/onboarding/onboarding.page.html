@@ -1,0 +1,36 @@
+<section class="onboarding">
+  <div class="onboarding__inner">
+    <!-- SIGNIN -->
+    <app-signin *ngIf="onboardingService.isSignIn"></app-signin>
+    <!-- SIGNUP -->
+    <app-signup *ngIf="onboardingService.isSignUp"></app-signup>
+    <!-- SLIDES -->
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()" [options]="swiperOpts">
+      <ion-slide *ngFor="let slide of onboardingObj; let i = index" [attr.index]="i" class="onboarding__slides">
+        <div [ngStyle]="{'background-image': 'url('+onboardingObj[i].bg+')'}" class="onboarding__bg"></div>
+        <div class="onboarding__blur"></div>
+        <div class="onboarding__main">
+          <div class="onboarding__info" animation [y]="['0', '-100px']" [when]="onboardingService.isSignIn || onboardingService.isSignUp">
+            <div class="onboarding__logo"></div>
+            <div class="onboarding__title">{{ onboardingObj[i].title }}</div>
+          </div>
+          <div class="onboarding__content" *ngIf="!onboardingService.isSignIn && !onboardingService.isSignUp">{{ onboardingObj[i].content }}</div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <!-- STEP -->
+    <div class="onboarding__step">
+      <div [ngClass]="curIndex === 0 ? 'active' : ''"></div>
+      <div [ngClass]="curIndex === 1 ? 'active' : ''"></div>
+      <div [ngClass]="curIndex === 2 ? 'active' : ''"></div>
+      <div [ngClass]="curIndex === 3 ? 'active' : ''"></div>
+      <div [ngClass]="curIndex === 4 ? 'active' : ''"></div>
+      <div [ngClass]="curIndex === 5 ? 'active' : ''"></div>
+    </div>
+  </div>
+  <div class="onboarding__text">
+    <p class="onboarding__text--black">Have an account? - <span class="onboarding__text--pink" (click)="signIn()"> Sign in</span></p>
+    <p class="onboarding__text--pink" (click)="signup()">Sign up</p> 
+    <p class="onboarding__text--pink">Learn more</p>
+  </div>
+</section>

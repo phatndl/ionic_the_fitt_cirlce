@@ -1,0 +1,7 @@
+{
+  "name": "the_fit_circle",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

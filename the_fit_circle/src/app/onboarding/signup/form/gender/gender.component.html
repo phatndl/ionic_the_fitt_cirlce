@@ -1,0 +1,20 @@
+<section class="gender">
+  <header class="gender__header">
+    <ion-icon class="gender__back" name="arrow-back" slot="start" (click)="back()"></ion-icon>
+    <h2 class="gender__title">Gender</h2>
+  </header>
+  <main class="gender__main">
+    <h1>What's your gender?</h1>
+    <div class="gender__opts">
+      <div class="gender__opt">
+        <div class="gender__sex--male" (click)="setGender(male, 'male')" #male></div>
+        <div class="gender__text--male" [attr.show]="male.hasAttribute('active')">male</div>
+      </div>
+      <div class="gender__opt">
+        <div class="gender__sex--female" (click)="setGender(female, 'female')" #female></div>
+        <div class="gender__text--female" [attr.show]="female.hasAttribute('active')">female</div>
+      </div>
+    </div>
+    <ion-button class="gender__save" (click)="saveGender()">Save</ion-button>
+  </main>
+</section>

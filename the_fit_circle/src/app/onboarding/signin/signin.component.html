@@ -1,0 +1,12 @@
+<div class="signin__input">
+  <form #formSignIn="ngForm" text-center (ngSubmit)="signInForm(formSignIn)" validate>
+    <ion-item lines="none" class="signin__inel">
+      <ion-input email name="email" required #emailCtrlIn="ngModel" ngModel placeholder="Email" type="email"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="signin__inel">
+      <ion-input name="pwd" required #pwdCtrlIn="ngModel" ngModel placeholder="Password" type="password"></ion-input>
+    </ion-item>
+    <div (click)="forgetPassword()">Forget your password?</div>
+    <ion-button type="submit">Sign In</ion-button>
+  </form>
+</div>

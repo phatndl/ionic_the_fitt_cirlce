@@ -1,0 +1,77 @@
+.birthday{
+    position: relative;
+    font-family: Averta Regular;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        position: relative;
+        height: 44px;
+    }
+    &__back{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        width: 16px;
+        height: 13px;
+        color: rgb(253, 101, 117);
+    }
+    &__title{
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        color: rgb(45,48,51);
+    }
+
+    &__main{
+        padding-top: 62px;
+        width: 100%;
+        text-align: center;
+        background: #FBFBFC;
+        height: calc(100vh - 44px);
+        position: relative;
+        h1{
+            font-size: 24px;
+            color: rgb(45, 50, 51);
+            font-weight: 700;
+        }
+    }
+    &__save{
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 135px;
+        height: 48px;
+        line-height: 48px;
+        --border-radius: 24px;
+        --color: #fff;
+        --background: rgb(253, 101, 117);
+    }
+    &__form{
+        position: relative;
+        ion-datetime{
+            height: 92px;
+            opacity: 0;
+        }
+    }
+    &__date{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+    }
+    &__date--value{
+        font-size: 48px;
+        line-height: 72px;
+        color: rgb(45, 48, 51);
+    }
+    &__date--key{
+        font-size: 12px;
+        line-height: 20px;
+        color: rgb(45, 48, 51);
+    }
+}
